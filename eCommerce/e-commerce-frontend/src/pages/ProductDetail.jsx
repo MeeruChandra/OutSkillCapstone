@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import { useCart } from '../context/CartContext'
 import productService from '../services/productService'
+import { getImageUrl } from '../utils/imageUtils'
 import './ProductDetail.css'
 
 const ProductDetail = () => {
@@ -53,7 +54,7 @@ const ProductDetail = () => {
 
         <div className="product-detail">
           <div className="product-detail-image">
-            <img src={product.image_url} alt={product.name} />
+            <img src={getImageUrl(product.image_url)} alt={product.name} />
           </div>
 
           <div className="product-detail-info">

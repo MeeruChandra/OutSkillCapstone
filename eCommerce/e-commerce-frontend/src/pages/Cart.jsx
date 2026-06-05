@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import { useCart } from '../context/CartContext'
+import { getImageUrl } from '../utils/imageUtils'
 import './Cart.css'
 
 const Cart = () => {
@@ -49,7 +50,7 @@ const Cart = () => {
               {cart.items.map((item) => (
                 <div key={item.id} className="cart-item">
                   <img
-                    src={item.product.image_url}
+                    src={getImageUrl(item.product.image_url)}
                     alt={item.product.name}
                     className="cart-item-image"
                   />

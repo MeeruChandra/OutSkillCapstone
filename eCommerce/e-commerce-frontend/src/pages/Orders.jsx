@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import orderService from '../services/orderService'
+import { getImageUrl } from '../utils/imageUtils'
 import './Orders.css'
 
 const Orders = () => {
@@ -93,7 +94,7 @@ const Orders = () => {
                         {order.order_items.map((item) => (
                           <div key={item.id} className="order-item">
                             <img
-                              src={item.product.image_url}
+                              src={getImageUrl(item.product.image_url)}
                               alt={item.product.name}
                               className="order-item-image"
                             />

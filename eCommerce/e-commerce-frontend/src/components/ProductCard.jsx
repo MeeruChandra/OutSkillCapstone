@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import { getImageUrl } from '../utils/imageUtils'
 import './ProductCard.css'
 
 const ProductCard = ({ product }) => {
@@ -18,7 +19,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card" onClick={() => navigate(`/products/${product.id}`)}>
       <div className="product-image">
-        <img src={product.image_url} alt={product.name} />
+        <img src={getImageUrl(product.image_url)} alt={product.name} />
       </div>
       <div className="product-info">
         <h3 className="product-name">{product.name}</h3>

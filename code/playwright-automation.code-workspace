@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "playwright-automation"
+		},
+		{
+			"path": "playwright-agents"
+		}
+	],
+	"settings": {}
+}

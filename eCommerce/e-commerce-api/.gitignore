@@ -13,3 +13,7 @@ ENV/
 .DS_Store
 .vscode/
 .idea/
+
+# Logs
+logs/
+*.log

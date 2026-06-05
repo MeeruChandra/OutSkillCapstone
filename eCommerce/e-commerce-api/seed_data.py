@@ -13,7 +13,7 @@ PRODUCTS_DATA = [
         "price": 29.99,
         "category": "backpacks",
         "inventory_count": 50,
-        "image_url": "https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg"
+        "image_url": "sauce-backpack-1200x1500.0a0b85a3.jpg"
     },
     {
         "name": "Sauce Labs Bike Light",
@@ -21,7 +21,7 @@ PRODUCTS_DATA = [
         "price": 9.99,
         "category": "accessories",
         "inventory_count": 100,
-        "image_url": "https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg"
+        "image_url": "bike-light-1200x1500.37c843b0.jpg"
     },
     {
         "name": "Sauce Labs Bolt T-Shirt",
@@ -29,7 +29,7 @@ PRODUCTS_DATA = [
         "price": 15.99,
         "category": "clothing",
         "inventory_count": 75,
-        "image_url": "https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg"
+        "image_url": "bolt-shirt-1200x1500.c2599ac5.jpg"
     },
     {
         "name": "Sauce Labs Fleece Jacket",
@@ -37,7 +37,7 @@ PRODUCTS_DATA = [
         "price": 49.99,
         "category": "clothing",
         "inventory_count": 30,
-        "image_url": "https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg"
+        "image_url": "sauce-pullover-1200x1500.51d7ffaf.jpg"
     },
     {
         "name": "Sauce Labs Onesie",
@@ -45,7 +45,7 @@ PRODUCTS_DATA = [
         "price": 7.99,
         "category": "clothing",
         "inventory_count": 60,
-        "image_url": "https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg"
+        "image_url": "red-onesie-1200x1500.2ec615b2.jpg"
     },
     {
         "name": "Test.allTheThings() T-Shirt (Red)",
@@ -53,7 +53,7 @@ PRODUCTS_DATA = [
         "price": 15.99,
         "category": "clothing",
         "inventory_count": 80,
-        "image_url": "https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg"
+        "image_url": "red-tatt-1200x1500.30dadef4.jpg"
     }
 ]
 
