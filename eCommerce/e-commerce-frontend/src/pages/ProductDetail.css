@@ -1,0 +1,139 @@
+.product-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.back-btn {
+  background: transparent;
+  color: #666;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.back-btn:hover {
+  color: #e2231a;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.product-detail-image img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.product-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-detail-info h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.product-detail-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.product-detail-price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e2231a;
+}
+
+.product-detail-category {
+  font-size: 16px;
+  color: #666;
+}
+
+.product-detail-category span {
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.product-detail-stock {
+  font-size: 16px;
+}
+
+.in-stock {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.out-of-stock {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.product-detail-actions {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.quantity-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quantity-selector label {
+  font-weight: 600;
+  color: #333;
+}
+
+.quantity-input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.add-to-cart-btn-large {
+  flex: 1;
+  padding: 14px 32px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .product-detail-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quantity-input {
+    width: 100%;
+  }
+}
