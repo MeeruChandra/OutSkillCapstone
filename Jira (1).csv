@@ -1,0 +1,1546 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Labels,Labels,Labels,Labels,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Development),Custom field (Issue color),Custom field (Rank),Custom field (Start date),Custom field (Story point estimate),Custom field (Team),Custom field (Vulnerability),Parent,Parent key,Parent summary,Status Category,Status Category Changed
+[NFR-OBS-012] Operational dashboards,ECOM-159,10204,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,mvp,nfr-obs,should,wiki-linked,,,"*NFR-OBS-012:* Dashboards exist for: request rate, error rate, p95 latency, active user count, order rate.
+
+*Priority:* Should | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Grafana dashboards versioned as JSON in repo.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0011r:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-011] No PII at INFO/DEBUG log level,ECOM-158,10203,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,must,mvp,nfr-obs,privacy,wiki-linked,,"*NFR-OBS-011:* Avoid logging PII at INFO/DEBUG level; PII MUST be redacted or hashed.
+
+*Priority:* Must | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Pair with NFR-SEC-013. Periodic log audit confirms compliance.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0011j:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-010] Published data retention & deletion policy,ECOM-157,10202,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,nfr-obs,privacy,should,v1.1,wiki-linked,,"*NFR-OBS-010:* Document data retention and deletion policy in a published privacy note.
+
+*Priority:* Should | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Linked from app footer; updated when retention NFRs change.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0011b:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-009] GDPR data-subject runbook,ECOM-156,10201,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,nfr-obs,privacy,should,v1.1,wiki-linked,,"*NFR-OBS-009:* Self-service endpoint or runbook for GDPR data-subject access and erasure requests.
+
+*Priority:* Should | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Pair with NFR-SEC-012. Documented response time ≤ 30 days.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00113:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-008] Error tracking service (Sentry-equivalent),ECOM-155,10200,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,nfr-obs,should,v1.1,wiki-linked,,,"*NFR-OBS-008:* Surface uncaught exceptions to error-tracking service (Sentry-equivalent) without exposing them to users.
+
+*Priority:* Should | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Sentry SDK on both backend and frontend; PII scrubbing enabled.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0010v:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-007] Alerts on error rate / p95 / readiness,ECOM-154,10199,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,must,mvp,nfr-obs,wiki-linked,,,"*NFR-OBS-007:* Alerts fire on: error rate > 1% over 5min, p95 latency exceeding NFR-PERF-001 by 50% for 10min, readiness probe failing for 2min.
+
+*Priority:* Must | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+h3. AC
+
+* Alerts route to oncall channel
+* Quarterly fire-drill confirms wiring
+* Documented in runbooks/alerts.md",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0010n:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-006] Log retention: 30d standard / 365d audit,ECOM-153,10198,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,must,mvp,nfr-obs,wiki-linked,,,"*NFR-OBS-006:* Logs retained ≥ 30 days; audit logs retained ≥ 1 year.
+
+*Priority:* Must | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Lifecycle rules on log backend.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0010f:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-005] Separate audit log for security-relevant events,ECOM-152,10197,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,must,mvp,nfr-obs,security,wiki-linked,,"*NFR-OBS-005:* Security-relevant events (login success/failure, admin actions, role changes) written to audit log distinct from request logs.
+
+*Priority:* Must | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+Pair with FR-ADM-012.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00107:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-004] OpenTelemetry traces for order creation,ECOM-151,10196,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,nfr-obs,should,v1.1,wiki-linked,,,"*NFR-OBS-004:* Emit distributed traces (OpenTelemetry) for at least the order-creation transaction.
+
+*Priority:* Should | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+OTLP exporter; spans cover validation, stock decrement, order insert, cart clear.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000zz:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-003] Prometheus /metrics endpoint,ECOM-150,10195,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:05,16-06-2026 20:05,,,,0,mvp,nfr-obs,should,wiki-linked,,,"*NFR-OBS-003:* Application metrics exposed in Prometheus format at /metrics: request count, error rate, latency histogram per endpoint.
+
+*Priority:* Should | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+prometheus-fastapi-instrumentator or similar.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000zr:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:05
+[NFR-OBS-002] Request-correlation id propagation,ECOM-149,10194,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-obs,wiki-linked,,,"*NFR-OBS-002:* Logs include request-correlation id; propagated to downstream calls (and frontend in dev).
+
+*Priority:* Must | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+X-Request-Id header generated if absent; echoed in response.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000zj:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:04
+[NFR-OBS-001] Structured JSON request logs,ECOM-148,10193,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-obs,wiki-linked,,,"*NFR-OBS-001:* Every API request produces a structured (JSON) log entry: timestamp, request_id, method, path, status, latency, user_id (if authenticated).
+
+*Priority:* Must | *Epic:* ECOM-16
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000zb:,,,,,10061,ECOM-16,[NFR-OBS] Observability & Compliance,To Do,16-06-2026 20:04
+[NFR-MNT-014] Cyclomatic complexity ≤ 10/fn,ECOM-147,10192,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,mvp,nfr-mnt,should,wiki-linked,,,"*NFR-MNT-014:* Cyclomatic complexity ≤ 10 per function; exceeding must be refactored or annotated.
+
+*Priority:* Should | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+ruff/eslint rules configured to warn at 10.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000z3:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+"[NFR-MNT-013] README, SETUP_GUIDE, ARCHITECTURE kept current",ECOM-146,10191,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,docs,must,mvp,nfr-mnt,wiki-linked,,"*NFR-MNT-013:* Repo includes README, SETUP_GUIDE, ARCHITECTURE docs; reviewed each release.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* All 3 docs present at repo root
+* Updated whenever architecture or setup changes
+* Release checklist item: ""Docs reviewed""",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000yv:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-012] Feature-based code organisation,ECOM-145,10190,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,mvp,nfr-mnt,should,wiki-linked,,,"*NFR-MNT-012:* Source organised by feature (routers, services, schemas per area), not layer-only.
+
+*Priority:* Should | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* e-commerce-api/auth/, /catalog/, /cart/, /orders/ each contain their router + service + schema
+* Cross-area imports minimised",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000yn:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-011] OpenAPI docs; breaking changes via path version,ECOM-144,10189,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-mnt,wiki-linked,,,"*NFR-MNT-011:* Public APIs documented in OpenAPI; breaking changes versioned via path prefix.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* /docs (Swagger UI) and /redoc available
+* OpenAPI schema published to git
+* /api/v2/... when breaking",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000yf:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-010] 12-factor config: env vars only,ECOM-143,10188,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-mnt,wiki-linked,,,"*NFR-MNT-010:* Configuration 12-factor: env vars only; no per-environment code branches.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* All config via env vars (DATABASE_URL, SECRET_KEY, CORS_ORIGINS, …)
+* {{.env.example}} documents every variable
+* No {{if env == ""prod""}} style branches",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000y7:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-009] SQLite → Postgres portability (connection string only),ECOM-142,10187,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-mnt,wiki-linked,,,"*NFR-MNT-009:* Portable from SQLite (dev) to Postgres (prod) without code changes — connection string only.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* DATABASE_URL env var drives engine
+* No dialect-specific SQL in code
+* CI tests against both engines",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000xz:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-008] Frontend deployable as static assets,ECOM-141,10186,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-mnt,ops,wiki-linked,,"*NFR-MNT-008:* Frontend deployable as static assets to any static host or CDN.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+Vite build output is the deployable; no Node server required.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000xr:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-007] Backend Dockerfile + container image,ECOM-140,10185,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,mvp,nfr-mnt,ops,wiki-linked,,"*NFR-MNT-007:* Backend deployable as Docker image with documented Dockerfile.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* Multi-stage Dockerfile (build + runtime)
+* Image size < 200 MB
+* Non-root user inside container",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000xj:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-006] Single-command bootstrap (make dev / docker compose up),ECOM-139,10184,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,devx,must,mvp,nfr-mnt,wiki-linked,,"*NFR-MNT-006:* Application runnable end-to-end via single bootstrap command.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* {{make dev}} or {{docker compose up}} brings up backend + frontend + DB
+* New contributor productive within 1 hour",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000xb:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-005] Alembic migrations from v1.1,ECOM-138,10183,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,must,nfr-mnt,v1.1,wiki-linked,,,"*NFR-MNT-005:* Adopt Alembic DB migrations from v1.1; schema changes ship as migration scripts.
+
+*Priority:* Must (v1.1) | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. AC
+
+* alembic init done
+* One migration per schema change PR
+* Migration applies cleanly forward and backward in CI",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000x3:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-004] Frontend lint-clean (ESLint),ECOM-137,10182,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:04,16-06-2026 20:04,,,,0,ci,must,mvp,nfr-mnt,wiki-linked,,"*NFR-MNT-004:* Frontend ESLint-clean; type-clean if TypeScript adopted.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000wv:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:04
+[NFR-MNT-003] Backend lint-clean (ruff) + type-clean (mypy),ECOM-136,10181,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,ci,must,mvp,nfr-mnt,wiki-linked,,"*NFR-MNT-003:* Backend lint-clean (ruff/flake8) and type-clean (mypy strict on services).
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+CI fails on any new lint warning or type error.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000wn:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:03
+[NFR-MNT-002] Frontend test coverage ≥ 70%,ECOM-135,10180,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,ci,must,mvp,nfr-mnt,wiki-linked,,"*NFR-MNT-002:* Frontend unit + component coverage ≥ 70%. Vitest coverage gate in CI.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000wf:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:03
+[NFR-MNT-001] Backend test coverage ≥ 80% on changed lines,ECOM-134,10179,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,ci,must,mvp,nfr-mnt,wiki-linked,,"*NFR-MNT-001:* Backend unit + integration coverage ≥ 80% on changed lines; overall MUST NOT regress.
+
+*Priority:* Must | *Epic:* ECOM-15
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+pytest-cov in CI; PR fails on regression.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000w7:,,,,,10060,ECOM-15,[NFR-MNT] Maintainability & Portability,To Do,16-06-2026 20:03
+[NFR-USE-012] Locale-aware currency / dates / numbers (en-US),ECOM-133,10178,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,frontend,mvp,nfr-use,should,wiki-linked,,"*NFR-USE-012:* Currency, dates, numbers locale-aware (Intl APIs); MVP locale is en-US.
+
+*Priority:* Should | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* All prices via Intl.NumberFormat
+* All dates via Intl.DateTimeFormat
+* MVP hard-coded to en-US; future i18n switches the locale only",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000vz:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-011] Lighthouse Accessibility ≥ 90 on all primary pages,ECOM-132,10177,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,a11y,ci,must,mvp,nfr-use,wiki-linked,"*NFR-USE-011:* Lighthouse Accessibility score ≥ 90 on all primary pages.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+CI fails if any primary page drops below 90.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000vr:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-010] Per-route page titles,ECOM-131,10176,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,frontend,mvp,nfr-use,should,wiki-linked,,"*NFR-USE-010:* Page titles change per route to support screen-reader announcement and browser tab orientation.
+
+*Priority:* Should | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+E.g. ""SauceDemo — Cart (3 items)"" / ""SauceDemo — Login"".",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000vj:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-009] Loading indicators and retry paths on async actions,ECOM-130,10175,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,frontend,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-009:* Long-running actions (> 500ms) show loading indicator; failed actions show clear error and retry path.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* Spinner on >500ms requests
+* Error toast includes ""Retry"" button where appropriate
+* Optimistic UI where safe (cart add) with rollback on failure",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000vb:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-008] Browser support: last 2 versions of Chrome / Firefox / Safari / Edge,ECOM-129,10174,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,frontend,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-008:* Application functions on latest 2 major versions of Chrome, Firefox, Safari, Edge.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* Browserslist config matches
+* Playwright tests run cross-browser in CI",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000v3:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-007] Responsive across mobile / tablet / desktop,ECOM-128,10173,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,frontend,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-007:* UI responsive across breakpoints: mobile (< 768px), tablet (768-1199px), desktop (≥ 1200px).
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* Catalog grid: 1 col / 2-3 col / 4 col by breakpoint
+* No horizontal scrollbar at any standard width
+* Visual regression test at all 3 breakpoints",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000uv:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-006] Color contrast meets WCAG AA ratios,ECOM-127,10172,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,a11y,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-006:* Color contrast: ≥ 4.5:1 normal text, ≥ 3:1 large text and UI components.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+Verified by axe-core in CI.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000un:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-005] Visible form labels + descriptive errors,ECOM-126,10171,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:03,16-06-2026 20:03,,,,0,a11y,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-005:* Form fields have visible labels and descriptive error messages.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* {{<label for>}} linked to each input
+* Errors describe how to fix (not just ""invalid"")
+* aria-describedby connects input ↔ error message",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000uf:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:03
+[NFR-USE-004] Meaningful alt text on all images,ECOM-125,10170,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,a11y,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-004:* All images have meaningful alt text; decorative images marked as such.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* Product images: alt = product name
+* Decorative: alt="""" or role=""presentation""
+* ESLint rule enforces alt attribute on {{<img>}}",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000u7:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:02
+[NFR-USE-003] Visible focus indicators on all interactive elements,ECOM-124,10169,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,a11y,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-003:* Visible focus indicators on all interactive elements.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* No {{outline: none}} without replacement
+* Focus ring meets contrast requirements
+* Verified during keyboard-only walkthrough",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000tz:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:02
+[NFR-USE-002] Keyboard-only operation on primary flows,ECOM-123,10168,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,a11y,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-002:* Application fully operable with keyboard only on primary flows.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. AC
+
+* Tab order is logical
+* All interactive elements reachable
+* Enter / Space activate buttons
+* Esc closes modals",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000tr:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:02
+[NFR-USE-001] WCAG 2.1 Level AA on primary flows,ECOM-122,10167,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,a11y,must,mvp,nfr-use,wiki-linked,,"*NFR-USE-001:* Application meets WCAG 2.1 Level AA on all primary user flows.
+
+*Priority:* Must | *Epic:* ECOM-14
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+Verified via axe-core in CI + manual screen-reader pass per release.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000tj:,,,,,10059,ECOM-14,[NFR-USE] Usability & Accessibility,To Do,16-06-2026 20:02
+[NFR-REL-010] Rollback within 5 minutes,ECOM-121,10166,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-010:* Deployment pipeline supports rollback to previous version within 5 minutes.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+h3. AC
+
+* Previous image tag retained on registry
+* {{make rollback}} script flips the deployment
+* DB migrations are backward-compatible (no destructive in MVP releases)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000tb:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-009] Stateless API for horizontal scaling + zero-downtime deploy,ECOM-120,10165,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-009:* API instances stateless to allow horizontal scaling and zero-downtime rolling deploy.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+h3. AC
+
+* No in-memory state across requests (sessions, caches)
+* DB is the only shared state
+* Rolling deploy validated in staging without dropped requests",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000t3:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-008] Idempotency on safe methods + POST orders,ECOM-119,10164,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,nfr-rel,should,v1.1,wiki-linked,,,"*NFR-REL-008:* Safe HTTP methods (GET) idempotent; POST /api/orders idempotent under Idempotency-Key.
+
+*Priority:* Should | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+Pair with FR-ORD-014.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000sv:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-007] Structured error response (no 500 leaks),ECOM-118,10163,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-007:* Background / one-off failures SHALL NOT leak as 500s; return structured error envelope.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+Pair with NFR-SEC-007. All endpoints return {{{detail, code, context}}} envelope.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000sn:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-006] Read-only DB graceful degradation,ECOM-117,10162,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,mvp,nfr-rel,should,wiki-linked,,,"*NFR-REL-006:* When DB is read-only, reads keep working; writes return 503 with Retry-After.
+
+*Priority:* Should | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000sf:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-005] MTTR ≤ 30 minutes from complete outage,ECOM-116,10161,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-005:* Mean Time To Recover from complete outage ≤ 30 minutes.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+Tracked through incident retrospectives. Runbook documents standard playbook (rebuild from image, restore last backup, switch traffic).",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000s7:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-004] Daily DB backups + quarterly restore drill,ECOM-115,10160,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:02,16-06-2026 20:02,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-004:* DB backed up at least daily with PITR; restore drill quarterly.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+h3. AC
+
+* Postgres PITR enabled (RPO ≤ 24h)
+* Quarterly drill documented: take backup → restore in staging → assert data integrity
+* Backup encryption + retention 30d",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000rz:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:02
+[NFR-REL-003] Transactional order creation,ECOM-114,10159,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-003:* Order creation is transactional: stock decrement, order insert, cart clear MUST all commit or all roll back.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+Pair with FR-ORD-004. Verified by chaos test that kills DB mid-tx.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000rr:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:01
+[NFR-REL-002] Liveness + readiness probes,ECOM-113,10158,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-002:* API exposes /health/live and /health/ready for LB / orchestrator integration.
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+h3. AC
+
+* /health/live returns 200 if process up
+* /health/ready returns 200 only if DB reachable
+* Neither requires auth
+* LB / k8s probes wired to these",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000rj:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:01
+[NFR-REL-001] ≥ 99.5% monthly uptime SLO,ECOM-112,10157,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,must,mvp,nfr-rel,wiki-linked,,,"*NFR-REL-001:* ≥ 99.5% monthly uptime in production (max ~3.6h downtime/month).
+
+*Priority:* Must | *Epic:* ECOM-13
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+Tracked via synthetic monitor on /health/ready + journey check from 2 regions.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000rb:,,,,,10058,ECOM-13,[NFR-REL] Reliability & Availability,To Do,16-06-2026 20:01
+"[NFR-SEC-015] SAST in CI (Bandit, ESLint security)",ECOM-111,10156,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,ci,must,mvp,nfr-sec,wiki-linked,,"*NFR-SEC-015:* Static analysis (Bandit, ESLint security plugin) runs in CI.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* Bandit on backend per PR
+* eslint-plugin-security on frontend per PR
+* Critical findings block merge",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000r3:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:01
+[NFR-SEC-014] CVE scanning in CI; critical blocks merge,ECOM-110,10155,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,ci,must,mvp,nfr-sec,wiki-linked,,"*NFR-SEC-014:* Dependencies scanned for CVEs in CI (pip-audit / npm audit). Critical findings block merge.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* CI step runs pip-audit + npm audit on every PR
+* Critical CVE in any dependency → CI fails
+* Dependabot/Renovate enabled for auto-PRs",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000qv:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:01
+[NFR-SEC-013] No PII / secrets in logs,ECOM-109,10154,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-013:* Logs MUST NOT contain passwords, JWTs, payment data, or full email addresses (mask before log).
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* Log filter masks sensitive fields by name
+* Email logged as {{j***@example.com}}
+* JWT shown only as first 8 chars + {{...}}
+* Periodic log audit confirms compliance",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000qn:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:01
+[NFR-SEC-012] GDPR data-deletion runbook (Article 17),ECOM-108,10153,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,mvp,nfr-sec,privacy,should,wiki-linked,,"*NFR-SEC-012:* Documented data-deletion procedure on user request (GDPR Article 17).
+
+*Priority:* Should | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. Deliverable
+
+* runbooks/gdpr-erasure.md
+* SQL script template (anonymise user, keep order rows for accounting)
+* Annual walkthrough exercise",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000qf:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:01
+[NFR-SEC-011] PII exposed only via owner-scoped endpoints,ECOM-107,10152,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,must,mvp,nfr-sec,privacy,wiki-linked,,"*NFR-SEC-011:* User PII (email, name, address) exposed only via authenticated endpoints scoped to the owning user.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* /api/auth/me returns only caller's PII
+* /api/orders/{id} returns 404 for foreign orders (FR-ORD-010)
+* No public endpoint enumerates users",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000q7:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:01
+[NFR-SEC-010] Set security headers on API + frontend,ECOM-106,10151,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:01,16-06-2026 20:01,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-010:* Set security headers: X-Content-Type-Options, Strict-Transport-Security, Referrer-Policy, frame-deny.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* All API responses include the 4 headers
+* Frontend uses helmet-like middleware
+* securityheaders.com scan ≥ A",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000pz:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:01
+[NFR-SEC-009] Rate limiting on auth endpoints (v1.1),ECOM-105,10150,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,nfr-sec,v1.1,wiki-linked,,,"*NFR-SEC-009:* Rate limit auth endpoints (e.g., 5 attempts/min per IP and per username).
+
+*Priority:* Must (v1.1) | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* /api/auth/login limited to 5 attempts/min/IP
+* Per-username throttle prevents user-targeted brute force
+* 429 Too Many Requests with Retry-After header",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000pr:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-SEC-008] Rotate secrets every 90 days (runbook),ECOM-104,10149,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,mvp,nfr-sec,should,wiki-linked,,,"*NFR-SEC-008:* Secrets (JWT signing key, DB password) rotated at least every 90 days; documented procedure.
+
+*Priority:* Should | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. Deliverable
+
+* runbooks/secret-rotation.md
+* Calendar reminder 90d
+* Dual-key support for rollover (old + new accepted briefly)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000pj:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-SEC-007] No stack traces in prod error responses,ECOM-103,10148,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-007:* Error responses MUST NOT include stack traces or internal identifiers in production.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* FastAPI exception handler swaps trace for generic message in prod
+* Errors still logged server-side with full detail (NFR-OBS-008)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000pb:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-SEC-006] CORS explicit allow-list per env,ECOM-102,10147,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-006:* CORS configured with explicit origin allow-list per environment; wildcard forbidden.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* Local: [http://localhost:5173]
+* Staging: [https://staging.example.com]
+* Prod: [https://www.example.com]
+* App refuses to start with {{*}} in CORS_ORIGINS",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000p3:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-SEC-005] Pydantic validation + ORM-only SQL,ECOM-101,10146,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-005:* All input validated via Pydantic at API boundary; SQL access exclusively via SQLAlchemy ORM (prevent injection).
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* No raw SQL strings in services (lint rule)
+* Pydantic schemas on every request body / response",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000ov:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+"[NFR-SEC-004] JWT access ≤ 30 min, refresh ≤ 7 days",ECOM-100,10145,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-004:* JWT access tokens expire ≤ 30 min; refresh tokens (v1.1) ≤ 7 days.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+Pair with FR-AUTH-006, FR-AUTH-013.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000on:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+"[NFR-SEC-003] JWT secret ≥ 256-bit entropy, env-only",ECOM-99,10144,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-003:* JWT secret ≥ 256-bit random entropy, sourced only from env vars, never committed.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. AC
+
+* {{.env.example}} shows placeholder, real values never committed
+* App fails fast if SECRET_KEY missing or < 32 chars
+* pre-commit hook scans for committed secrets",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000of:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-SEC-002] Bcrypt password hashing ≥ 12 rounds,ECOM-98,10143,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-002:* Passwords hashed with bcrypt at ≥ 12 rounds.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+Pair with FR-AUTH-003. passlib config: schemes=[""bcrypt""], bcrypt__rounds=12.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000o7:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-SEC-001] HTTPS/TLS 1.2+ in non-local environments,ECOM-97,10142,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 20:00,16-06-2026 20:00,,,,0,must,mvp,nfr-sec,wiki-linked,,,"*NFR-SEC-001:* All traffic served over HTTPS (TLS 1.2+) in any non-local environment. Enforce HSTS.
+
+*Priority:* Must | *Epic:* ECOM-12
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000nz:,,,,,10057,ECOM-12,[NFR-SEC] Security & Privacy,To Do,16-06-2026 20:00
+[NFR-PERF-010] Catalog list pagination at > 50 products,ECOM-96,10141,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,must,nfr-perf,v1.1,wiki-linked,,,"*NFR-PERF-010:* Catalog list endpoint paginates at > 50 products (page size ≤ 50). See FR-CAT-010.
+
+*Priority:* Must (v1.1) | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000nr:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-009] Redis cache for catalog reads (v1.1),ECOM-95,10140,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,nfr-perf,should,v1.1,wiki-linked,,,"*NFR-PERF-009:* Redis cache for catalog reads in v1.1, with cache invalidation on admin writes.
+
+*Priority:* Should (v1.1) | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. AC
+
+* Redis warmed on startup
+* Cache invalidation on POST/PUT/DELETE products
+* Cache hit rate dashboard",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000nj:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-008] Horizontal scaling: ≥ 4 stateless API instances tested,ECOM-94,10139,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,mvp,nfr-perf,should,wiki-linked,,,"*NFR-PERF-008:* API scales horizontally: ≥ 4 stateless instances behind LB, DB as only shared state.
+
+*Priority:* Should | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Verification
+
+* Docker compose with 4 API replicas + LB
+* Load test confirms linear-ish scaling",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000nb:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-007] Cache-Control on catalog list (≥ 60s),ECOM-93,10138,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,mvp,nfr-perf,should,wiki-linked,,,"*NFR-PERF-007:* Use response caching (Cache-Control headers) on catalog list endpoint for ≥ 60s.
+
+*Priority:* Should | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. AC
+
+* GET /api/products response sets Cache-Control: max-age=60
+* Vary header on auth state",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000n3:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-006] First Contentful Paint ≤ 1.5s on fast-3G,ECOM-92,10137,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,frontend,mvp,nfr-perf,should,wiki-linked,,"*NFR-PERF-006:* FCP ≤ 1.5s on fast-3G simulated connection.
+
+*Priority:* Should | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Verification
+
+* Lighthouse CI with throttled network preset",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000mv:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-005] Frontend bundle ≤ 200 KB gzipped,ECOM-91,10136,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,frontend,must,mvp,nfr-perf,wiki-linked,,"*NFR-PERF-005:* Frontend production bundle (gzipped, initial route) ≤ 200 KB.
+
+*Priority:* Must | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Verification
+
+* size-limit or vite-bundle-visualizer in CI
+* Build fails if budget exceeded",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000mn:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-004] Lighthouse Performance ≥ 85 on mobile,ECOM-90,10135,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,frontend,must,mvp,nfr-perf,wiki-linked,,"*NFR-PERF-004:* Frontend Lighthouse Performance ≥ 85 on mid-tier mobile profile.
+
+*Priority:* Must | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Verification
+
+* Lighthouse CI runs on every PR for product list, detail, cart pages",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000mf:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-003] Checkout p95 ≤ 500 ms,ECOM-89,10134,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,must,mvp,nfr-perf,wiki-linked,,,"*NFR-PERF-003:* Checkout endpoint completes within p95 ≤ 500ms including DB transaction.
+
+*Priority:* Must | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Verification
+
+* Concurrent checkout test under MVP load
+* Validate atomic FR-ORD-004 doesn't exceed budget",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000m7:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-002] Catalog reads sustain ≥ 100 RPS,ECOM-88,10133,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,must,mvp,nfr-perf,wiki-linked,,,"*NFR-PERF-002:* Catalog read endpoints sustain peak read RPS without queueing.
+
+*Target:* ≥ 100 RPS sustained
+*Priority:* Must | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000lz:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[NFR-PERF-001] API latency targets (p50/p95/p99),ECOM-87,10132,Task,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:59,16-06-2026 19:59,,,,0,must,mvp,nfr-perf,wiki-linked,,,"*NFR-PERF-001:* API endpoints SHALL respond within p50 ≤ 100ms, p95 ≤ 300ms, p99 ≤ 800ms under MVP load profile.
+
+*Priority:* Must | *Epic:* ECOM-11
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Verification
+
+* k6 / Locust load test against staging
+* Baseline published; PR merges gate on >10% percentile regression",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000lr:,,,,,10056,ECOM-11,[NFR-PERF] Performance & Scalability,To Do,16-06-2026 19:59
+[FR-ADM-012] Audit log for all admin actions,ECOM-86,10131,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,security,v2,wiki-linked,,"*FR-ADM-012:* All admin actions recorded in audit log (who, when, what changed).
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* Every admin write (product, inventory, order status, user deactivate) → audit row
+* Fields: actor_user_id, action, target_type, target_id, before, after, timestamp
+* Retained ≥ 365 days (NFR-OBS-006)
+* Open question: separate DB or same?",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000lj:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-011] CSV export of orders,ECOM-85,10130,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,could,fr-adm,v2,wiki-linked,,,"*FR-ADM-011:* Admin can export CSV of orders for a given date range.
+
+*Priority:* Could (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* GET /api/admin/orders/export?from=...&to=... returns text/csv
+* Includes order id, user, total, status, created_at
+* Streamed response for large date ranges",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000lb:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-010] Admin metrics endpoint,ECOM-84,10129,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,should,v2,wiki-linked,,,"*FR-ADM-010:* Admin-only metrics: total orders, revenue last N days, top products.
+
+*Priority:* Should (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* GET /api/admin/metrics returns aggregate JSON
+* Supports ?period=7d|30d|90d
+* Top products ordered by units sold",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000l3:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-009] Admin can deactivate user accounts,ECOM-83,10128,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,should,v2,wiki-linked,,,"*FR-ADM-009:* Admin can deactivate user accounts; active sessions invalidated at next request.
+
+*Priority:* Should (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* PATCH /api/admin/users/{id}/deactivate sets is_active=false
+* Subsequent requests from deactivated user → 401 (FR-AUTH-005)
+* Open question: should we revoke existing JWTs immediately or wait for expiry?",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000kv:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-008] Non-admin endpoints reject with 403,ECOM-82,10127,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,security,v2,wiki-linked,,"*FR-ADM-008:* All admin endpoints reject non-ADMIN users with HTTP 403.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* USER role calling any /api/admin/* or /api/products POST/PUT/DELETE → 403
+* No JWT → 401 (precedence: auth first, then role)
+* FastAPI dependency centralises check",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000kn:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-007] Admin transitions order status,ECOM-81,10126,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-007:* Admin can transition order status per FR-ORD-011 lifecycle.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* PATCH /api/admin/orders/{id}/status accepts new status
+* Validates transition (no backwards moves)
+* Audit log entry written
+* Triggers notification email/SMS (v2)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000kf:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-006] Admin lists all orders across users,ECOM-80,10125,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-006:* Admin can list all orders across all users, with pagination + status filter.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* GET /api/admin/orders returns orders across users
+* ?status=SHIPPED filters by status
+* Pagination supported (page, limit)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000k7:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-005] Admin can adjust inventory_count with audit,ECOM-79,10124,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-005:* Admin can adjust {{inventory_count}} directly; audit-log entry records old/new value + timestamp.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* PATCH /api/products/{id}/inventory accepts new count or delta
+* Audit row inserted with admin_user_id, product_id, old, new, timestamp
+* Negative inventory not allowed (returns 400)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000jz:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-004] Soft-delete (deactivate) products only,ECOM-78,10123,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-004:* Soft-delete (deactivate) by setting {{is_active=false}}; hard deletion forbidden to preserve historic order references.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* DELETE /api/products/{id} (JWT + ADMIN) sets is_active=false, returns 204
+* Historic OrderItem rows still reference the product
+* Product disappears from public catalog (FR-CAT-007)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000jr:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-003] Admin can update product fields,ECOM-77,10122,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-003:* The system SHALL allow ADMIN users to update any field of an existing product.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* PUT /api/products/{id} (JWT + ADMIN) returns 200
+* Partial updates allowed
+* Audit log entry written (FR-ADM-012)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000jj:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-002] Admin can create products,ECOM-76,10121,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-002:* The system SHALL allow ADMIN users to create products.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* POST /api/products (JWT + ADMIN) returns 201
+* All fields validated
+* Non-admin gets 403",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000jb:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ADM-001] Add role attribute to User (USER / ADMIN),ECOM-75,10120,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:58,16-06-2026 19:58,,,,0,fr-adm,must,v2,wiki-linked,,,"*FR-ADM-001:* The system SHALL introduce a {{role}} attribute on User with values USER (default) and ADMIN.
+
+*Priority:* Must (v2) | *Epic:* ECOM-10
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. AC
+
+* DB migration adds {{role}} column (default USER)
+* JWT carries role claim
+* Admin-only endpoints check role==ADMIN",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000j3:,,,,,10055,ECOM-10,[ADM] Admin & Inventory (v2),To Do,16-06-2026 19:58
+[FR-ORD-015] Email confirmation on order creation,ECOM-74,10119,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,could,fr-ord,v1.1,wiki-linked,,,"*FR-ORD-015:* The system MAY send an email confirmation on successful order creation in v1.1.
+
+*Priority:* Could (v1.1) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* Email triggered out-of-band (background job) after order commit
+* Contains order id, item list, total
+* Failure to send does NOT roll back the order",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000iv:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-014] Idempotency key on order creation,ECOM-73,10118,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,should,v1.1,wiki-linked,,,"*FR-ORD-014:* The system SHOULD support an idempotency key on order creation so retried submissions do not produce duplicate orders.
+
+*Priority:* Should | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* POST /api/orders with Idempotency-Key header
+* Retry with same key returns the original order_id (not a new order)
+* Key TTL ~24h, then key can be reused",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000in:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-013] Cancel PENDING/CONFIRMED orders and restore stock,ECOM-72,10117,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,should,v1.1,wiki-linked,,,"*FR-ORD-013:* The system SHOULD allow a user to cancel an order while its status is PENDING or CONFIRMED; cancellation MUST return reserved inventory.
+
+*Priority:* Should | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* POST /api/orders/{id}/cancel returns 200, status=CANCELLED
+* Inventory restored to product.inventory_count (atomic)
+* Cancel on SHIPPED/DELIVERED returns 409",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000if:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-012] Persist shipping address per order,ECOM-71,10116,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-012:* The system SHALL persist the shipping address as captured at checkout, separately from the user's profile (a user may ship to many addresses).
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* order.shipping_address stored as free-text in v1
+* Address NOT denormalized from a user profile (per-order)
+* Open question: address book entity in v2?",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000i7:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+"[FR-ORD-011] Order status lifecycle (PENDING → DELIVERED, CANCELLED)",ECOM-70,10115,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-011:* The system SHALL assign an initial order status of PENDING on creation and SHALL allow the lifecycle states: PENDING → CONFIRMED → SHIPPED → DELIVERED, plus CANCELLED as a terminal alternative.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* New orders start as PENDING
+* Status enum enforced at API and DB
+* Forward transitions only (no DELIVERED → PENDING)
+* CANCELLED accepts from PENDING or CONFIRMED only",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000hz:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-010] Deny foreign-user orders with 404 (no existence leak),ECOM-69,10114,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,security,wiki-linked,,"*FR-ORD-010:* The system SHALL deny access to orders that do not belong to the authenticated user, returning HTTP 404 (not 403, to avoid leaking existence).
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* GET /api/orders/{id} where order belongs to another user → 404
+* GET /api/orders/{id} where order doesn't exist → 404 (indistinguishable)
+* Both responses use identical body",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000hr:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-009] Order detail endpoint with line items,ECOM-68,10113,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-009:* The system SHALL provide order detail (line items, totals, address, status, timestamps) for any order owned by the authenticated user.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* GET /api/orders/{id} returns full order + items
+* Items show product_name, quantity, price_at_purchase, line_total
+* Includes shipping_address, payment_method, status, created_at, updated_at",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000hj:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-008] List authenticated user's orders,ECOM-67,10112,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-008:* The system SHALL list all orders belonging to the authenticated user, sorted by created_at descending.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* GET /api/orders returns 200 with array
+* Only caller's orders included
+* Newest first (created_at DESC)
+* Each entry includes id, total, status, created_at",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000hb:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-007] Compute and store order total_amount,ECOM-66,10111,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-007:* The system SHALL compute and store total_amount as the sum of price_at_purchase × quantity over all order items.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* order.total_amount = sum(item.price_at_purchase * item.quantity)
+* Persisted on order row (not computed on read)
+* Verified by integration test summing line items",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000h3:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-006] Snapshot unit prices into order lines,ECOM-65,10110,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:57,16-06-2026 19:57,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-006:* The system SHALL lock the unit price of each line into OrderItem.price_at_purchase at order creation time; subsequent product price changes MUST NOT alter historic orders.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* OrderItem row has price_at_purchase column set from product.price at creation time
+* Updating product.price later does NOT change historic OrderItem rows
+* order.total_amount derived from snapshotted prices, not live product prices",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000gv:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:57
+[FR-ORD-005] Clear cart on successful order creation,ECOM-64,10109,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-005:* The system SHALL clear the user's cart on successful order creation (see FR-CART-011).
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* After 201 order created, GET /api/cart returns empty
+* Cart clear part of same transaction (NFR-REL-003)
+* See FR-CART-011 for the cart-side implementation",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000gn:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:56
+[FR-ORD-004] Atomically decrement inventory at order creation,ECOM-63,10108,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-004:* The system SHALL atomically decrement inventory_count for each line as part of order creation; the operation MUST either fully succeed or fully roll back.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* All decrements + order insert + cart clear in single DB transaction
+* Any failure rolls back ALL changes (no partial state)
+* Concurrent checkouts of last unit: exactly one succeeds, one fails (no oversell)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000gf:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:56
+[FR-ORD-003] Validate stock and active state at order creation,ECOM-62,10107,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-003:* The system SHALL validate that every cart line refers to an active product with sufficient inventory at the time of order creation; insufficient stock returns HTTP 409.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* Any line with inventory_count < quantity → 409 with list of offending lines
+* Any line with is_active=false → 409
+* Validation done with row lock (FOR UPDATE) to avoid race",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000g7:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:56
+[FR-ORD-002] Reject order creation when cart is empty,ECOM-61,10106,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-002:* The system SHALL reject order creation when the user's cart is empty, returning HTTP 400.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* POST /api/orders with empty cart → 400 reason=CART_EMPTY
+* No order row inserted
+* UI prevents the call by graying out ""Place order"" until cart has items",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000fz:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:56
+[FR-ORD-001] Create order from current cart,ECOM-60,10105,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-ord,must,mvp,wiki-linked,,,"*FR-ORD-001:* The system SHALL allow an authenticated user with a non-empty cart to create an order by submitting shipping address and payment method.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-9
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. AC
+
+* POST /api/orders {address, payment_method} returns 201 with order_id + total
+* Order rows persisted (status=PENDING)
+* Cart cleared in same tx (FR-CART-011)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000fr:,,,,,10054,ECOM-9,[ORD] Checkout & Order Management,To Do,16-06-2026 19:56
+[FR-CART-015] Flag unavailable lines and exclude from total,ECOM-59,10104,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,could,fr-cart,v2,wiki-linked,,,"*FR-CART-015:* The system MAY flag any cart line whose underlying product has since been deactivated or out-of-stock as ""unavailable"" and exclude it from the displayed grand total.
+
+*Priority:* Could | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Cart response includes per-line {{available: boolean}}
+* Unavailable lines excluded from grand_total
+* UI renders unavailable lines greyed out with warning icon
+* Checkout (FR-ORD-001) skips unavailable lines",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000fj:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:56
+[FR-CART-014] Confirmation prompt before clearing cart,ECOM-58,10103,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-cart,frontend,mvp,should,wiki-linked,,"*FR-CART-014:* The system SHOULD require an explicit confirmation prompt on the client before invoking the clear-cart operation.
+
+*Priority:* Should | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Clicking ""Clear cart"" opens modal: ""Remove all items?""
+* Cancel keeps cart intact (no API call)
+* Confirm calls DELETE /api/cart
+* Individual remove (FR-CART-007) does NOT require confirmation",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000fb:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:56
+[FR-CART-013] Cap line quantity at current inventory,ECOM-57,10102,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-cart,mvp,should,wiki-linked,,,"*FR-CART-013:* The system SHALL cap any single cart line's quantity at the product's current inventory_count; attempts to exceed this MUST return HTTP 409 with the available stock value.
+
+*Priority:* Should | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* PUT qty=N where N > inventory_count → 409 with {available: M}
+* UI caps quantity at available stock and shows message
+* Re-check stock on every PUT (not cached)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000f3:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:56
+[FR-CART-012] Reject cart endpoints without valid JWT,ECOM-56,10101,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-cart,must,mvp,security,wiki-linked,,"*FR-CART-012:* The system SHALL reject all cart endpoints when the request lacks a valid JWT, returning HTTP 401.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* All 5 cart endpoints (GET, POST, PUT, DELETE x2) return 401 without JWT
+* Expired JWT also returns 401
+* Inherits auth dependency from FR-AUTH-008",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000ev:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:56
+[FR-CART-011] Auto-clear cart after successful order creation,ECOM-55,10100,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:56,16-06-2026 19:56,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-011:* The system SHALL automatically clear the cart immediately after successful order creation (see FR-ORD-005).
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Successful POST /api/orders → cart empty on next GET
+* Clear happens inside the same DB transaction as order creation (NFR-REL-003)
+* Failed order does NOT clear cart",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000en:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:56
+[FR-CART-010] Live cart item-count badge in header,ECOM-54,10099,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,frontend,must,mvp,wiki-linked,,"*FR-CART-010:* The system SHALL display a real-time cart item-count badge in the application header on every authenticated page.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Badge visible on all authenticated pages
+* Updates within 200ms of any cart change (optimistic)
+* Reconciles with server response",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000ef:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-009] Block adding inactive or out-of-stock product,ECOM-53,10098,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-009:* The system SHALL prevent adding a product whose inventory_count is 0 or whose is_active flag is false, returning HTTP 409 Conflict with a human-readable reason.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Add inactive product → 409 reason=PRODUCT_UNAVAILABLE
+* Add OOS product → 409 reason=OUT_OF_STOCK
+* UI shows toast and refreshes catalog",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000e7:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-008] Clear entire cart in one operation,ECOM-52,10097,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-008:* The system SHALL allow a user to clear their entire cart in a single operation.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* DELETE /api/cart returns 204
+* Subsequent GET returns empty cart
+* Idempotent — clearing empty cart still returns 204",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000dz:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-007] Remove single cart line,ECOM-51,10096,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-007:* The system SHALL allow a user to remove a single cart line.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* DELETE /api/cart/items/{id} returns 204
+* Line gone from subsequent GET /api/cart
+* 404 if line id does not belong to caller",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000dr:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-006] Reject quantity ≤ 0 with HTTP 400,ECOM-50,10095,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-006:* The system SHALL reject quantity updates of 0 or negative values with HTTP 400; removal must use the delete endpoint.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* PUT quantity=0 returns 400
+* PUT quantity=-1 returns 400
+* Response message hints user to use DELETE for removal",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000dj:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-005] Update line quantity,ECOM-49,10094,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-005:* The system SHALL allow a user to update the quantity of any cart line to any positive integer ≥ 1.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* PUT /api/cart/items/{id} {quantity: N} returns 200
+* New quantity reflected in subsequent GET /api/cart
+* 404 if cart line id does not belong to caller",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000db:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-004] Retrieve cart with totals and item details,ECOM-48,10093,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-004:* The system SHALL allow a user to retrieve their current cart, returning per-line product details (name, image, unit price), line total, item count, and grand total.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* GET /api/cart returns 200 with {items[], item_count, grand_total}
+* Each item has id, product_id, product_name, image_url, unit_price, quantity, line_total
+* Empty cart returns 200 with item_count=0, grand_total=0",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000d3:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-003] Persist cart server-side per user,ECOM-47,10092,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-003:* The system SHALL persist cart contents server-side, keyed to the authenticated user, so the cart survives across sessions and devices.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Cart survives logout/login on same browser
+* Cart appears on second browser/device with same user
+* Open question: should carts auto-expire after N days?",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000cv:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-002] Increment qty when adding existing product,ECOM-46,10091,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-002:* When a user adds a product that already exists in their cart, the system SHALL increment the existing line's quantity rather than creating a duplicate line.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* Adding product X (qty 1) twice produces ONE line with qty=2
+* Adding product X (qty 1) then X (qty 3) produces ONE line with qty=4
+* No duplicate cart_item rows in DB",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000cn:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CART-001] Add product to authenticated user's cart,ECOM-45,10090,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:55,16-06-2026 19:55,,,,0,fr-cart,must,mvp,wiki-linked,,,"*FR-CART-001:* The system SHALL allow an authenticated user to add a product to their cart by product ID and quantity.
+
+*Priority:* Must (MVP) | *Epic:* ECOM-8
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. AC
+
+* POST /api/cart/items {product_id, quantity} returns 201
+* Quantity defaults to 1 if omitted
+* Returns 401 without JWT (FR-CART-012)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000cf:,,,,,10053,ECOM-8,[CART] Shopping Cart,To Do,16-06-2026 19:55
+[FR-CAT-013] Category facets aggregation (could),ECOM-44,10089,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,could,fr-cat,v2,wiki-linked,,,"*Requirement (FR-CAT-013):* The system MAY return a ""category facets"" aggregation alongside list responses to power a counted filter UI.
+
+*Priority:* Could
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* Response envelope includes {{facets: { categories: [{name, count}, ...] }}}
+* Counts reflect current filter context (e.g., search keyword applied)
+* Frontend renders sidebar with category names + counts",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000c7:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-012] Frontend placeholder for broken product images,ECOM-43,10088,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,frontend,mvp,should,wiki-linked,,"*Requirement (FR-CAT-012):* The frontend SHALL display a placeholder image when image_url fails to load.
+
+*Priority:* Should
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* onError handler on {{<img>}} swaps to placeholder
+* Placeholder is a local asset (no network dependency)
+* Alt text preserved for screen readers",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000bz:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-011] Deterministic default sort + sort query param,ECOM-42,10087,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,mvp,should,wiki-linked,,,"*Requirement (FR-CAT-011):* The system SHOULD sort the product list by a deterministic default (e.g., id ascending) and SHOULD accept a sort query parameter (price asc/desc, name).
+
+*Priority:* Should
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* No sort param → default order (id ascending)
+* {{?sort=price_asc}} → ascending price
+* {{?sort=price_desc}} → descending price
+* {{?sort=name}} → alphabetical
+* Invalid sort value returns 400",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000br:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-010] Paginate product list at > 50 items (v1.1),ECOM-41,10086,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,should,v1.1,wiki-linked,,,"*Requirement (FR-CAT-010):* The system SHOULD paginate the product list once the catalog exceeds 50 products (cursor- or page-based).
+
+*Priority:* Should (v1.1)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* {{?page=1&limit=20}} returns paged results (or cursor equivalent)
+* Default page size ≤ 50
+* Response envelope includes total count or next-cursor",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000bj:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-009] Seed at least 6 demo products in ≥ 2 categories,ECOM-40,10085,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,test-data,wiki-linked,,"*Requirement (FR-CAT-009):* The system SHALL ship with at least 6 seeded products spanning ≥ 2 categories, for testing and demos.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* DB seed creates ≥ 6 products
+* ≥ 2 distinct categories represented
+* Each product has name, description, price, image_url, category, inventory_count
+* Seed script idempotent",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000bb:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+"[FR-CAT-008] Public read, admin-only mutations",ECOM-39,10084,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,security,wiki-linked,,"*Requirement (FR-CAT-008):* Product list and detail endpoints SHALL be readable without authentication; mutating endpoints (create / update — see ECOM-10) SHALL require admin role.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* GET /api/products and /api/products/{id} work without Authorization header
+* POST/PUT/DELETE /api/products return 403 for non-admin
+* POST/PUT/DELETE /api/products return 401 if no token",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000b3:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-007] Exclude inactive products from list and search,ECOM-38,10083,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-007):* The system SHALL exclude inactive (is_active = false) products from list and search results.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* GET /api/products never returns is_active=false items
+* Search results also exclude inactive
+* Detail endpoint returns 404 for inactive ids",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000av:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-006] Surface inventory / in-stock state,ECOM-37,10082,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-006):* The system SHALL include each product's current inventory_count (or a derived ""in stock"" boolean) in list and detail responses.
+
+*User story:* As a shopper, I want to see whether a product is in stock so that I don't add unavailable items.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* Each product item includes {{inventory_count}} and/or {{in_stock}} boolean
+* UI shows ""Out of stock"" badge when inventory_count = 0
+* Open question: surface exact count or just buckets?",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000an:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-005] Retrieve single product detail,ECOM-36,10081,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-005):* The system SHALL provide a single-product retrieve endpoint returning all product attributes for a given id.
+
+*User story:* As a shopper, I want to view the full details of a single product so that I can make an informed buying decision.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* GET /api/products/{id} returns full product object
+* Unknown id returns 404
+* Inactive product returns 404 (treat as not found)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000af:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-004] Combine search and category filters,ECOM-35,10080,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-004):* The system SHALL allow filters to combine (category AND search keyword).
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* {{?category=X&search=keyword}} returns intersection (AND, not OR)
+* Either param alone still works independently",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i000a7:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-003] Filter products by category,ECOM-34,10079,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:54,16-06-2026 19:54,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-003):* The system SHALL support filtering products by category via a query parameter.
+
+*User story:* As a shopper, I want to filter products by category so that I can narrow to my area of interest.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* {{?category=Apparel}} returns only that category
+* Unknown category returns 200 with {{[]}}
+* Category match is exact (not fuzzy in v1)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0009z:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:54
+[FR-CAT-002] Keyword search on product name and description,ECOM-33,10078,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-002):* The system SHALL support search over product name and description via a {{search}} query parameter (case-insensitive substring match in MVP).
+
+*User story:* As a shopper, I want to search products by keyword so that I can find a specific item.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* {{?search=backpack}} returns matching products
+* Match is case-insensitive
+* Match scans both name and description fields
+* Zero matches returns 200 with {{[]}}",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0009r:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:53
+[FR-CAT-001] List all active products,ECOM-32,10077,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-cat,must,mvp,wiki-linked,,,"*Requirement (FR-CAT-001):* The system SHALL list all active products (is_active = true) via a list endpoint.
+
+*User story:* As a shopper, I want to browse all active products in a grid so that I can quickly survey what's available.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-7
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Acceptance criteria
+
+* GET /api/products returns 200 with JSON array
+* Only active products included (FR-CAT-007)
+* Empty catalog returns 200 with {{[]}}",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0009j:,,,,,10052,ECOM-7,[CAT] Product Catalog & Browsing,To Do,16-06-2026 19:53
+[FR-AUTH-015] OAuth 2.0 social login (v2),ECOM-31,10076,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,could,fr-auth,v2,wiki-linked,,,"*Requirement (FR-AUTH-015):* The system MAY support OAuth 2.0 social login (Google, GitHub) in a future release.
+
+*Priority:* Could (v2)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* ""Sign in with Google"" button on login page
+* OAuth callback creates / links user account
+* Mapping: oauth_subject ↔ ECOM user id
+* Email collision policy: link to existing account if email matches",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0009b:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+[FR-AUTH-014] Password-reset via email link (v1.1),ECOM-30,10075,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-auth,should,v1.1,wiki-linked,,,"*Requirement (FR-AUTH-014):* The system SHOULD provide a password-reset flow via email link.
+
+*User story:* As a future user, I want to reset my password by email so that I can recover access without contacting support.
+
+*Priority:* Should (v1.1)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* POST /api/auth/password-reset accepts email, sends one-time link
+* Link expires after 1 hour
+* Link is single-use
+* Submitting new password updates hash and invalidates outstanding tokens",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00093:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+[FR-AUTH-013] Refresh-token mechanism (v1.1),ECOM-29,10074,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-auth,should,v1.1,wiki-linked,,,"*Requirement (FR-AUTH-013):* The system SHOULD provide a refresh-token mechanism to extend sessions without long-lived access tokens.
+
+*Priority:* Should (v1.1)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Login also issues a refresh_token (≤ 7 day expiry — NFR-SEC-004)
+* POST /api/auth/refresh exchanges valid refresh_token for new access_token
+* Refresh tokens stored server-side (revocable)
+* Refresh tokens rotate on use (no replay)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0008v:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+[FR-AUTH-012] Seed three test users for automated testing,ECOM-28,10073,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-auth,must,mvp,test-data,wiki-linked,,"*Requirement (FR-AUTH-012):* The system SHALL provide three pre-seeded test users (standard_user, problem_user, performance_user) for automated testing.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* DB seed script creates 3 users with password {{secret_sauce}}
+* All three authenticate successfully via POST /api/auth/login
+* Seeded data idempotent (re-seeding does not error or duplicate)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0008n:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+"[FR-AUTH-011] Password complexity: 8+ chars, letter + digit",ECOM-27,10072,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-auth,must,mvp,security,wiki-linked,,"*Requirement (FR-AUTH-011):* The system SHALL enforce password complexity: minimum 8 characters, at least one letter and one digit. Stronger rules MAY be added later.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Register with password < 8 chars returns 422
+* Register with password missing digit returns 422
+* Register with password missing letter returns 422
+* Server-side validation is authoritative (client validates too for UX)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0008f:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+[FR-AUTH-010] Auto-redirect to login on 401,ECOM-26,10071,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-auth,frontend,must,mvp,wiki-linked,,"*Requirement (FR-AUTH-010):* The frontend SHALL automatically redirect users to the login page when an API response returns 401.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Axios response interceptor catches 401
+* Token cleared from localStorage
+* Router redirects to /login
+* Toast shown: ""Session expired, please log in again""",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00087:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+[FR-AUTH-009] Frontend stores JWT in localStorage,ECOM-25,10070,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:53,16-06-2026 19:53,,,,0,fr-auth,frontend,must,mvp,wiki-linked,,"*Requirement (FR-AUTH-009):* The frontend SHALL store the JWT in browser localStorage for v1 and SHALL clear it on logout.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Successful login sets {{auth_token}} in localStorage
+* Logout removes {{auth_token}} from localStorage
+* Page reload reads token from localStorage and restores auth context
+
+h3. Open question
+
+Move to httpOnly cookie in v1.1? (CSRF vs XSS trade-off)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0007z:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:53
+[FR-AUTH-008] Reject protected endpoints without valid JWT,ECOM-24,10069,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,security,wiki-linked,,"*Requirement (FR-AUTH-008):* The system SHALL reject any request that omits or presents an invalid / expired JWT on a protected endpoint with HTTP 401.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Missing Authorization header → 401
+* Malformed bearer token → 401
+* Tampered signature → 401
+* Expired token → 401
+* Verification dependency applied to all protected routes",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0007r:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-007] GET /api/auth/me returns profile,ECOM-23,10068,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,wiki-linked,,,"*Requirement (FR-AUTH-007):* The system SHALL provide an endpoint that returns the authenticated user's profile (id, username, email, first/last name).
+
+*User story:* As a logged-in user, I want to see my profile so that I can verify the right account is in use.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* GET /api/auth/me with valid JWT returns 200 + profile JSON
+* Profile excludes password hash
+* Returns 401 if JWT missing/invalid (FR-AUTH-008)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0007j:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-006] JWT signed HS256 with 30-min expiry,ECOM-22,10067,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,security,wiki-linked,,"*Requirement (FR-AUTH-006):* The system SHALL sign JWTs with HS256 using a server-side secret and SHALL set an expiry no longer than 30 minutes by default.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* JWT alg header = HS256
+* exp claim ≤ now + 30 min
+* Secret sourced from env var (not source code) — NFR-SEC-003",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0007b:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-005] Generic 401 on invalid credentials,ECOM-21,10066,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,security,wiki-linked,,"*Requirement (FR-AUTH-005):* The system SHALL return HTTP 401 for invalid credentials without revealing which of username / password was wrong.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Unknown username returns 401
+* Known username with wrong password returns 401
+* Both responses are identical (no field-specific message)
+* Deactivated user (is_active=false) login also returns 401",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00073:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-004] JWT login for registered users,ECOM-20,10065,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,wiki-linked,,,"*Requirement (FR-AUTH-004):* The system SHALL allow registered users to authenticate by submitting username and password, issuing a JWT on success.
+
+*User story:* As a returning user, I want to log in so that I can resume where I left off.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* POST /api/auth/login with valid creds returns 200 + JWT
+* Response body: {{{ access_token, token_type: ""bearer"" }}}
+* JWT contains sub=user_id and exp claim",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0006v:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-003] Bcrypt password hashing,ECOM-19,10064,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,security,wiki-linked,,"*Requirement (FR-AUTH-003):* The system SHALL hash passwords with bcrypt (≥ 12 rounds) before persistence. Plaintext passwords MUST NOT be logged or returned in any API response.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Stored password hash starts with {{$2b$12$}} or stronger
+* No endpoint returns the password field
+* Application logs do not contain the plaintext password
+* Pair with NFR-SEC-002",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0006n:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-002] Enforce uniqueness of username and email,ECOM-18,10063,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,wiki-linked,,,"*Requirement (FR-AUTH-002):* The system SHALL enforce uniqueness of username and email, returning HTTP 409 on conflict.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* Attempt to register an existing username returns 409
+* Attempt to register an existing email returns 409
+* Error message is generic (no leak of which field clashed)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0006f:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[FR-AUTH-001] Register new user account,ECOM-17,10062,Story,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:52,16-06-2026 19:52,,,,0,fr-auth,must,mvp,wiki-linked,,,"*Requirement (FR-AUTH-001):* The system SHALL allow a visitor to register a new account by providing username, email, password, first name, and last name.
+
+*User story:* As a new visitor, I want to register an account so that I can start shopping and persist a cart.
+
+*Priority:* Must (MVP)
+*Epic:* ECOM-6
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Acceptance criteria
+
+* POST /api/auth/register accepts username, email, password, first_name, last_name
+* Returns 201 on success with the created user (no password)
+* Field validation rejects malformed input with 422",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00067:,,,,,10051,ECOM-6,[AUTH] Authentication & User Management,To Do,16-06-2026 19:52
+[NFR-OBS] Observability & Compliance,ECOM-16,10061,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,mvp,non-functional,wiki-linked,,,,"h2. Observability & Compliance
+
+Structured logging, metrics, traces, audit logs, alerts, error tracking, GDPR data subject runbook, retention policy.
+
+*Requirement ID prefix:* {{NFR-OBS-*}}
+*Priority:* MVP (mixed Must / Should)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1703937
+
+h3. Headline targets
+
+* 100% structured request logs
+* Prometheus /metrics endpoint
+* Logs ≥ 30d retention; audit logs ≥ 365d
+* Alerts on error rate / p95 / readiness
+* No PII in INFO/DEBUG logs
+
+h3. Scope (12 tasks)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0005z:,,,,,,,,To Do,16-06-2026 19:51
+[NFR-MNT] Maintainability & Portability,ECOM-15,10060,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,mvp,non-functional,wiki-linked,,,,"h2. Maintainability & Portability
+
+Test coverage, lint/type cleanliness, 12-factor config, Docker, SQLite↔Postgres portability, single-command bootstrap, OpenAPI documentation, code organisation.
+
+*Requirement ID prefix:* {{NFR-MNT-*}}
+*Priority:* MVP
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1671170
+
+h3. Headline targets
+
+* Backend coverage ≥ 80%; frontend ≥ 70%
+* Lint + types clean in CI
+* Single-command bootstrap (make dev / docker compose up)
+* Cyclomatic complexity ≤ 10/fn
+
+h3. Scope (14 tasks)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0005r:,,,,,,,,To Do,16-06-2026 19:51
+[NFR-USE] Usability & Accessibility,ECOM-14,10059,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,mvp,non-functional,wiki-linked,,,,"h2. Usability & Accessibility
+
+WCAG 2.1 AA, keyboard navigation, screen-reader support, responsive design across mobile/tablet/desktop, color contrast, focus indicators.
+
+*Requirement ID prefix:* {{NFR-USE-*}}
+*Priority:* MVP
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638443
+
+h3. Headline targets
+
+* WCAG 2.1 AA on all primary flows
+* Lighthouse Accessibility ≥ 90
+* Three responsive breakpoints
+* Last 2 versions of Chrome/Firefox/Safari/Edge
+
+h3. Scope (12 tasks)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0005j:,,,,,,,,To Do,16-06-2026 19:51
+[NFR-REL] Reliability & Availability,ECOM-13,10058,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,mvp,non-functional,wiki-linked,,,,"h2. Reliability & Availability
+
+Uptime, graceful degradation, transactional integrity, backups, MTTR, stateless API for zero-downtime rolling deploy.
+
+*Requirement ID prefix:* {{NFR-REL-*}}
+*Priority:* MVP
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638422
+
+h3. Headline targets
+
+* ≥ 99.5% uptime SLO
+* MTTR ≤ 30 min
+* Daily backups, quarterly restore drill
+* Liveness + readiness probes
+* ≤ 5 min rollback
+
+h3. Scope (10 tasks)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0005b:,,,,,,,,To Do,16-06-2026 19:51
+[NFR-SEC] Security & Privacy,ECOM-12,10057,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,mvp,non-functional,wiki-linked,,,,"h2. Security & Privacy
+
+OWASP Top 10 coverage, bcrypt password hashing, JWT hardening, TLS, CORS, security headers, dependency scanning, PII handling.
+
+*Requirement ID prefix:* {{NFR-SEC-*}}
+*Priority:* MVP (mostly Must)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1638401
+
+h3. Headline targets
+
+* 100% OWASP Top 10 coverage
+* bcrypt ≥ 12 rounds; JWT ≤ 30 min expiry
+* HTTPS / HSTS in non-local environments
+* SAST in CI; critical CVEs block merge
+
+h3. Scope (15 tasks)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00053:,,,,,,,,To Do,16-06-2026 19:51
+[NFR-PERF] Performance & Scalability,ECOM-11,10056,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,mvp,non-functional,wiki-linked,,,,"h2. Performance & Scalability
+
+API latency, throughput, frontend perf, horizontal scaling, caching. Measurable thresholds verified via load test (k6/Locust) and Lighthouse CI.
+
+*Requirement ID prefix:* {{NFR-PERF-*}}
+*Priority:* MVP (mixed Must / Should)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1605633
+
+h3. Headline targets
+
+* API p50 ≤ 100 ms, p95 ≤ 300 ms, p99 ≤ 800 ms
+* ≥ 100 RPS sustained on catalog reads
+* Lighthouse Performance ≥ 85
+* Bundle ≤ 200 KB gzipped initial route
+* 200 concurrent users supported
+
+h3. Scope (10 tasks)",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0004v:,,,,,,,,To Do,16-06-2026 19:51
+[ADM] Admin & Inventory (v2),ECOM-10,10055,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,functional,v2,wiki-linked,,,,"h2. Admin & Inventory (v2)
+
+Operational surface for staff: catalog CRUD, inventory adjustments, order status transitions, user management, audit log. Introduces role-based access control (USER / ADMIN).
+
+*Requirement ID prefix:* {{FR-ADM-*}}
+*Priority:* v2 / FUTURE
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1114135
+
+h3. Scope (12 tickets)
+
+* Role attribute on User
+* Product create / update / soft-deactivate
+* Inventory adjustments with audit
+* List all orders, transition status
+* Deactivate user accounts
+* Admin metrics endpoints
+* Audit log for all admin actions
+
+h3. Dependencies
+
+Extension of 4.1 Authentication (role attribute).",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0004n:,,,,,,,,To Do,16-06-2026 19:51
+[ORD] Checkout & Order Management,ECOM-9,10054,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:51,16-06-2026 19:51,,,,0,functional,mvp,wiki-linked,,,,"h2. Checkout & Order Management
+
+Converts a cart into a persisted order: line items, prices-at-purchase, shipping address, placeholder payment method. Atomic stock decrement, cart clear, order insert. Order lifecycle: PENDING → CONFIRMED → SHIPPED → DELIVERED (or CANCELLED).
+
+*Requirement ID prefix:* {{FR-ORD-*}}
+*Priority:* MVP (P0)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1572866
+
+h3. Scope (15 stories)
+
+* Order creation, list, detail
+* Atomic stock decrement, price snapshot
+* Owner-only access (404 not 403 on foreign orders)
+* Status lifecycle
+* v1.1: cancel order, idempotency key, email confirmation
+
+h3. Dependencies
+
+4.1 Authentication, 4.2 Catalog, 4.3 Cart.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0004f:,,,,,,,,To Do,16-06-2026 19:51
+[CART] Shopping Cart,ECOM-8,10053,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:50,16-06-2026 19:50,,,,0,functional,mvp,wiki-linked,,,,"h2. Shopping Cart
+
+Lets an authenticated shopper collect products before checkout. Cart contents are persisted server-side, scoped per user, and survive across sessions and devices. Auto-cleared on successful order creation.
+
+*Requirement ID prefix:* {{FR-CART-*}}
+*Priority:* MVP (P0)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1146881
+
+h3. Scope (15 stories)
+
+* Add / view / update / remove / clear
+* Per-user server-side persistence
+* Stock and active-product validation
+* Live cart-badge in header
+* Auto-clear after checkout
+
+h3. Dependencies
+
+4.1 Authentication, 4.2 Catalog.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i00047:,,,,,,,,To Do,16-06-2026 19:50
+[CAT] Product Catalog & Browsing,ECOM-7,10052,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:50,16-06-2026 19:50,,,,0,functional,mvp,wiki-linked,,,,"h2. Product Catalog & Browsing
+
+Read-mostly catalog surface that lets shoppers browse, search, filter, and inspect products. Mutating endpoints are admin-only (see ADM epic).
+
+*Requirement ID prefix:* {{FR-CAT-*}}
+*Priority:* MVP (P0)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1540097
+
+h3. Scope (13 stories)
+
+* List products, search by keyword, filter by category, combined filters
+* Single-product detail endpoint
+* Inventory / in-stock surfacing
+* Seeded products for demos
+* v1.1: pagination, sort, faceted aggregation
+
+h3. Dependencies
+
+4.1 Authentication (for purchase actions only — browsing is public).",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0003z:,,,,,,,,To Do,16-06-2026 19:50
+[AUTH] Authentication & User Management,ECOM-6,10051,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,16-06-2026 19:50,16-06-2026 19:50,,,,0,functional,mvp,wiki-linked,,,,"h2. Authentication & User Management
+
+Foundational subsystem providing user registration, JWT-based login, session continuity, and identity retrieval. Every other subsystem (Cart, Orders) depends on the authenticated user identity it produces.
+
+*Requirement ID prefix:* {{FR-AUTH-*}}
+*Priority:* MVP (P0)
+*Wiki:* https://meetuchandra-1781427506328.atlassian.net/wiki/spaces/QA/pages/1507329
+
+h3. Scope (15 stories)
+
+* Register, login, logout, JWT issuance & verification
+* Profile retrieval, password rules
+* Seeded test users (standard_user / problem_user / performance_user)
+* v1.1: refresh tokens, password reset
+* v2 (future): OAuth social login
+
+h3. Dependencies
+
+None — foundational.",,varun kalapala,557058:006716a1-e7ca-43ae-b280-54b4ce24f884,,,,,,,,,,,0|i0003r:,,,,,,,,To Do,16-06-2026 19:50
+Task 4,ECOM-3,10016,Bug,Done,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,Done,,,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,14-06-2026 15:01,14-06-2026 15:01,,14-06-2026 15:01,28-06-2026 00:00,0,,,,,,,,,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,,,,,,,,,,0|i0003j:,,,,,,,,Done,14-06-2026 15:01
+Epic 1,ECOM-1,10014,Epic,To Do,ECOM,AgenticQAJIRA,software,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,Medium,,,,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,14-06-2026 15:01,14-06-2026 15:01,12-07-2026 20:16,,,0,,,,,,,,,Meetu Chandra,557058:e495708d-3c72-4f1e-a0cd-114d86e655b2,,,,,,,,,,,0|i00033:,,,,,,,,To Do,14-06-2026 15:01
